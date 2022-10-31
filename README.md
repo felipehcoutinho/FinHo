@@ -23,7 +23,8 @@ perl FinHo.pl - --hosts Hosts_dir/ - --phages Phage_dir/
 ### General options:
 - --format | Extension of the files containing genomic sequences in the Host and Phage directories (default = fasta)
 - --threads | Number of threads to use for blast search (default = 12)
-- --parse_only | Skip BLAST searches and only parse the results (ALL the original files must be in the folder and with the same names)
+- --use_ref | Use host sequences from RefSeq  instead of custom genomes
+- --parse_only | Skip BLAST searches and only parse the Results (ALL the original files must be in the folder and with the same names)
 - --help | Prints this message and exits.
 
 ### Homology Matches options:
@@ -34,7 +35,7 @@ perl FinHo.pl - --hosts Hosts_dir/ - --phages Phage_dir/
 - --min_qcov_hml | Minimum query % coverage for considering a match (default = 0)
 - --skip_hml | Flag to skip Homology Match step
 
-### tRNA Matches options:
+### RNA Matches options:
 - --min_bitscore_trna | Minimum bitscore for considering a match (default = 0)
 - --min_alignment_trna | Minimum alignment length for considering a match (default = 60nt)
 - --min_identity_trna | Minimum % identity for considering a match (default = 95%)
